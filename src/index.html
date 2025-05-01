@@ -9,27 +9,30 @@
 <body class="font-poppins">
     <header>
         <nav>
-            <div class="text-[18px] max-w-[1280px] mx-auto flex justify-between py-[30px] items-center">
+            <div class="px-5 text-[18px] md:max-w-[1280px] md:mx-auto flex justify-between py-4 md:py-[30px] items-center">
                 <div>
                     <img src="imgs/nav_logo.svg" alt="">
                 </div>
-                <ul class="flex gap-[40px] items-center">
+                <ul class="hidden md:flex gap-[40px] items-center">
                     <li><a href="">About</a></li>
                     <li><a href="">Home</a></li>
                     <li><a href="">Service</a></li>
                 </ul>
-                <button class="text-main-blue border-main-blue border-solid border-2 px-[74px] py-[14px]">
+                <button class="text-main-blue border-main-blue border-solid border-2 md:flex hidden px-[74px] py-[14px]">
                     Login
                 </button>
+                <div class="md:hidden">
+                    <i class="fa-solid fa-bars text-[25px] text-main-blue"></i>
+                </div>            
             </div>
         </nav>
         <div class="hero">
-            <div class="flex justify-between max-w-[1280px] mx-auto items-center pt-[40px] pb-[100px]">
-                <div class="hero_info flex flex-col gap-[30px] w-[630px] items-start">
-                    <h1 class="text-[56px] font-bold text-h-color leading-[60px]">
+            <div class="flex flex-col-reverse gap-3 md:gap-0 md:flex-row justify-between md:max-w-[1280px] md:mx-auto items-center md:pt-[40px] md:pb-[100px] px-5 md:px-0">
+                <div class="hero_info flex flex-col md:gap-[30px] md:w-[630px] md:items-start items-center gap-7 w-[100%]">
+                    <h1 class="md:text-[56px] md:leading-[60px] text-center md:text-start text-[40px] leading-10 font-bold text-h-color">
                         We Care About Your Health
                     </h1>
-                    <p class="text-p-color text-[20px] w-[500px]">
+                    <p class="text-p-color text-[20px] md:w-[500px] text-center">
                         Check now your healty with our profesional doctor, completed and modern fasilities services
                     </p>
                     <button class="text-white bg-main-blue text-[18px] py-[14px] px-[45px]">
@@ -44,14 +47,14 @@
     </header>
     <main>
         <section class="bg-bg_blue">
-            <div class="max-w-[1280px] font-semibold mx-auto flex flex-col items-center text-center pt-[75px] pb-[160px]">
+            <div class="md:max-w-[1280px] font-semibold md:mx-auto px-5 md:px-0 flex flex-col items-center text-center pt-[75px] md:pb-[160px] pb-[100px]">
                 <p class="text-h-color text-[20px] mb-[20px]">
                     Our Services
                 </p>
-                <h2 class="text-h-color text-[40px] w-[500px] leading-[42px] mb-[146px]" >
+                <h2 class="text-h-color text-[40px] w-[100%] md:w-[500px] leading-[42px] mb-[146px]" >
                     4 Step Easy We Care Your Health
                 </h2>
-                <div class="flex items-center justify-between gap-[88px]">
+                <div class="flex md:flex-row flex-col items-center justify-between gap-[88px]">
                     <div class="card px-[55px] font-semibold flex text-[18px] flex-col bg-white text-center items-center">
                         <div class="-mt-[68px] mb-[35px]">
                             <img src="imgs/sec1_1.svg" alt="">
@@ -77,16 +80,18 @@
             </div>
         </section>
         <section>
-            <div class="flex justify-between items-center max-w-[1280px] mx-auto pt-[42px] pb-[90px]">
-                <div class="w-[48%]">
+            <div class="flex px-5 py-4 flex-col-reverse md:flex-row md:justify-between items-center md:max-w-[1280px] md:mx-auto md:pt-[42px] md:pb-[90px] ">
+                <div class="md:w-[48%] w-[100%] ">
                     <img src="imgs/sec_2.png" alt="">
                 </div>
-                <div class="info flex flex-col items-start w-[48%] ">
+                <div class="info flex flex-col text-center md:items-start md:w-[48%] w-[100%] md:flex-row mb-5 md:mb-0">
                     <p class="text-h-color text-[20px] mb-[22px] font-semibold">About Us</p>
                     <h3 class="font-semibold text-[40px] mb-[32px]">
                         We help your health
                     </h3>
-                    <p class="font-medium text-p-color text-[18px] mb-[65px]">This profile describes the activities of health services and medical support as well as the facilities and conditions of the General Hospital which is reflected in the general public served from all groups, religions and beliefs, ethnicity and the level and frequency of bed occupancy which continues to increase significantly.</p>
+                    <p class="font-medium text-p-color text-[18px] mb-[40px] md:mb-[65px]">
+                        This profile describes the activities of health services and medical support as well as the facilities and conditions of the General Hospital which is reflected in the general public served from all groups, religions and beliefs, ethnicity and the level and frequency of bed occupancy which continues to increase significantly.
+                    </p>
                     <button class="text-white bg-main-blue text-[18px] font-medium py-[14px] px-[45px]">
                         More About Us
                     </button>
@@ -94,14 +99,14 @@
             </div>
         </section>
         <section class="bg-bg_blue">
-            <div class="flex flex-col items-center pt-[100px] pb-[85px] max-w-[1280px] mx-auto">
-                <p class="font-semibold text-[20px] mb-5">
+            <div class="flex flex-col items-center pt-7 md:pt-[100px] text-center pb-9 md:pb-[85px] md:max-w-[1280px] mx-auto px-5">
+                <p class="font-semibold text-[20px] mb-4 md:mb-5">
                     Our Doctors
                 </p>
-                <h3 class="font-semibold text-[40px] mb-20">
+                <h3 class="font-semibold text-[40px] mb-10 md:mb-20">
                     visit our professional specialists
                 </h3>
-                <div class="card_container flex items-center justify-between gap-4">
+                <div class="card_container flex md:flex-row flex-col items-center justify-between gap-5 md:gap-4">
                     <div class="card flex flex-col items-center">
                         <div>
                             <img src="imgs/sec3_1.png" alt="">
@@ -166,29 +171,29 @@
             </div>
         </section>
         <section>
-            <div class="flex flex-col max-w-[1280px] mx-auto py-[100px]">
-                <div class="info flex flex-col gap-5 font-bold text-h-color mb-[55px]">
+            <div class="flex flex-col md:max-w-[1280px] mx-auto p-5 md:py-[100px]">
+                <div class="info flex flex-col gap-5 items-center md:text-start text-center md:items-start font-bold text-h-color mb-[55px]">
                     <p class="text-[20px]">Testimonials</p>
-                    <h3 class="text-[40px]">What they say after visiting our hospital</h3>
+                    <h3 class="text-[30px] md:text-[40px]">What they say after visiting our hospital</h3>
                 </div>
-                <div class="cards flex justify-between">
-                    <div class="card flex flex-col items-center w-[49%px]">
-                        <div class="h-[380px] w-[100%]">
+                <div class="cards flex md:flex-row flex-col justify-between md:gap-5">
+                    <div class="card1 flex flex-col items-center w-[100%] md:w-[652px]">
+                        <div class="md:h-[380px] w-[100%]">
                             <img class="h-[100%] w-[100%]" src="imgs/sec4_1.png" alt="">
                         </div>
                         <div class="card_info bg-bg_blue p-[24px] w-[100%] items-center text-start">
                             <p class="font-bold text-[20px] mb-[10px]">John doe</p>
-                            <p class="font-medium text-[18px] text-h-color w-[400px] mb-[20px]"> The service I felt was very good, the staff and doctors were friendly and provided very clear information.</p>
+                            <p class="font-medium text-[18px] text-h-color md:w-[400px] mb-[20px]"> The service I felt was very good, the staff and doctors were friendly and provided very clear information.</p>
                             <img src="imgs/star.svg" alt="">
                         </div>
                     </div>
-                    <div class="card flex flex-col items-center w-[652px]">
-                        <div class="h-[380px] w-[100%]">
+                    <div class="card2 flex flex-col items-center w-[100%] md:w-[652px]">
+                        <div class="md:h-[380px] w-[100%]">
                             <img class="h-[100%] w-[100%]" src="imgs/sec4_2.png" alt="">
                         </div>
                         <div class="card_info bg-bg_blue p-[24px] w-[100%] items-center text-start">
                             <p class="font-bold text-[20px] mb-[10px]">John doe</p>
-                            <p class="font-medium text-[18px] text-h-color w-[400px] mb-[20px]"> The service I felt was very good, the staff and doctors were friendly and provided very clear information.</p>
+                            <p class="font-medium text-[18px] text-h-color md:w-[400px] mb-[20px]"> The service I felt was very good, the staff and doctors were friendly and provided very clear information.</p>
                             <img src="imgs/star.svg" alt="">
                         </div>
                     </div>
@@ -196,31 +201,31 @@
             </div>
         </section>
         <section>
-            <div class="flex flex-col bg-h-color max-w-[1280px] mx-auto p-[74px] gap-[70px]">
-                <h1 class="text-[40px] font-bold w-[600px] text-white leading-[50px] ">
+            <div class="flex flex-col bg-h-color md:max-w-[1280px] mx-auto p-5 md:p-[74px] gap-9 md:gap-[70px]">
+                <h1 class="text-[30px] md:text-[40px] font-bold md:w-[600px] text-white text-center md:text-start md:leading-[50px] ">
                     Let's consult your health with our doctor
                 </h1>
-                <div class="flex justify-between items-baseline">
+                <div class="flex md:flex-row flex-col items-center justify-between gap-4 text-center md:items-baseline">
                     <p class="text-[18px] text-white font-medium text-base">
                         We will provide the best service.
                     </p>
-                    <button class="text-white bg-main-blue text-[18px] font-medium py-[14px] px-[45px]">
+                    <button class="text-white bg-main-blue text-[14px]  md:text-[18px] font-medium py-[10px] md:py-[14px] px-[24px] md:px-[45px]">
                         Contact Us
                     </button>
                 </div>
             </div>  
         </section>
     </main>
-    <footer class="bg-bg_blue">
-        <div class="max-w-[1280px] flex justify-between py-[100px] mx-auto">
-            <div class="flex flex-col items-start gap-[40px] w-[480px]"> 
+     <footer class="bg-bg_blue">
+        <div class="md:max-w-[1280px] flex md:flex-row flex-col justify-between p-5 md:py-[100px] mx-auto">
+            <div class="flex flex-col text-center items-start gap-[40px] w-[100%] md:w-[480px] mb-7 md:mb-0"> 
                 <div>
                     <img src="imgs/nav_logo.svg" alt="">
                 </div>
                 <p class="text-[18px] text-h-color mb[36px]">
                     Our hospital tries to answer the challenges in the community's need for quality dental health services <br> but still affordable by a wide audience.
                 </p>
-                <div class="social pt-[9px] text-[20px] flex gap-4">
+                <div class="social hidden pt-[9px] text-[20px] md:flex gap-4">
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-linkedin-in"></i>
@@ -229,22 +234,30 @@
                     <i class="fa-brands fa-behance"></i>
                 </div>
             </div>
-            <div class="text-[20px]">
-                <p class="font-bold mb-[25px]">Menus</p>
-                <ul class="flex flex-col items-center gap-[40px]">
+            <div class="text-[20px] mb-7 md:mb-0">
+                <p class="hidden md:flex font-bold mb-[25px]">Menus</p>
+                <ul class="flex md:flex-col items-center justify-between px-12 md:gap-[40px]">
                     <li><a href="">About</a></li>
                     <li><a href="">Home</a></li>
                     <li><a href="">Service</a></li>
                 </ul>
             </div>
-            <div class="flex flex-col items-start">
-                <p class="font-bold mb-[40px] text-[20px] mb-">
+            <div class="flex flex-col items-center mb-10 md:mb-0 md:items-start gap-4 ">
+                <p class="font-bold md:mb-[40px] text-[20px]">
                     Get Medical Checkup Voucher
                 </p>
-                <input title="Enter Your Email" type="text" class="mb-[25px] py-[12px] text-[20px] px-[28px] bg-h-color text-white w-[410px] h-[75px] rounded-lg">
+                <input title="Enter Your Email" type="text" class="md:mb-[25px] py-2 md:py-[12px] text-[18px] md:text-[20px] px-5 md:px-[28px] bg-h-color text-white md:w-[410px] w-[100%] h-14 md:h-[75px] rounded-lg">
                 <button class="text-white bg-main-blue text-[18px] font-medium py-[14px] px-[45px]">
                     Subscribe
                 </button>
+            </div>
+            <div class="social justify-between px-[100px] md:hidden md:pt-[9px] text-[20px] flex w-[100%]">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-behance"></i>
             </div>
         </div>
     </footer>
